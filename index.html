@@ -1,31 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea-House</title>      
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/b42b9f287f.js" crossorigin="anonymous"></script> 
-    <!-- tailwind -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea-House</title>
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/fc98867bd2.js" crossorigin="anonymous"></script>
+  <!-- tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- manrope font  -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 
-</head>     
+
+</head>
+
 <body>
-    
+  <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+
+    <header class="lg:flex pt-10">
+      <!-- banner -->
+      <div>
+        <h2 class="font-bold text-4xl md:text-5xl">It's a good <br>
+          tea time at The <br>
+          Tea House</h2>
+        <p class="text-gray-500 w-3/4 pt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, tenetur.
+        </p>
+        <button class="bg-gradient-to-r from-orange-500 to-red-500 mt-2 text-xl rounded-lg px-2 py-2 text-white">Explore More <i
+            class="fa-solid fa-arrow-right -rotate-45 text-white"></i></button>
+      </div>
+      <div class="relative">
+        <div>
+          <img class="w-full" src="images/banner.png" alt="">
+        </div>
+        <div
+          class="flex items-center absolute bg-white shadow-lg px-2 py-2 md:px-10 lg:py-4 rounded-lg top-28 md:top-80 md:left-32 lg:left-28 ">
+          <div><i class="fa-solid fa-star text-amber-500 text-2xl "></i></div>
+          <div class="ml-2">
+            <h2>5.00</h2>
+            <p>Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- featured -->
+    <section class="py-9 lg:py-24 ">
+      <!-- title -->
+      <div class="text-center mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold mb-2">Our Featured Products</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, nihil.</p>
+      </div>
+      <!-- product cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-center text-center">
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden ">
+          <img class="px-20 lg:px-14 py-5" src="images/tea-1.png" alt="">
+          <div class="p-4">
+            <h3 class="font-bold">Milk Tea</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, recusandae?</p>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden ">
+          <img class="px-20 lg:px-14 py-5" src="images/tea-2.png" alt="">
+          <div class="p-4">
+            <h3 class="font-bold">cream Tea</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, recusandae?</p>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden ">
+          <img class="px-20 lg:px-14 py-5" src="images/tea-3.png" alt="">
+          <div class="p-4">
+            <h3 class="font-bold">Sheik Tea</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, recusandae?</p>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden ">
+          <img class="px-20 lg:px-14 py-5" src="images/tea-4.png" alt="">
+          <div class="p-4">
+            <h3 class="font-bold">Lemon Tea</h3>
+            <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, recusandae?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
